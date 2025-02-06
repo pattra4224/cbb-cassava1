@@ -1,6 +1,15 @@
+.background {
+    background-color: #f5f5f5;  /* ตั้งค่าสีพื้นหลัง */
+    width: 100%; 
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
+}
+
+
 .header {
     display: flex; 
-    background-color: #009933;  /* ตั้งค่าสีพื้นหลัง */
+    background-color: #336633;  /* ตั้งค่าสีพื้นหลัง */
     text-align: left ;         /* ตั้งค่าการจัดวางข้อความ */
     align-items: center;     /* ตั้งค่าการจัดวางข้อความ */ 
     padding: 10px;              /* เพิ่มระยะห่างภายใน */
@@ -8,8 +17,21 @@
     height: 50px;  
 }
 
+.line1 {
+    display: flex; 
+    background-color: #f5f5f5;  /* ตั้งค่าสีพื้นหลัง */
+    text-align: left ;         /* ตั้งค่าการจัดวางข้อความ */
+    align-items: center;     /* ตั้งค่าการจัดวางข้อความ */ 
+    padding: 2px;              /* เพิ่มระยะห่างภายใน */
+    width: 100%; 
+    height: 1px;  
+}
+
 .header h1 {
-    font-family: 'Times New Roman', sans-serif; /* ใช้ฟอนต์ Arial */
+    font-family: 'Times New Roman', sans-serif; 
     color: #FFF;                    /* สีของข้อความ */
     font-size: 34px;                 /* ขนาดฟอนต์ */
+    margin: 0;
+    padding: 0;
 }
+
