@@ -72,21 +72,51 @@
     transition: all 0.3s ease;
 }
 
+
+.form-input:hover {
+    border-color: #45a049; /* Darker green on hover */
+    background-color: #c8e6c9; /* Darker background on hover */
+}
+
 .submit-btn {
-    background-color: #4CAF50;
-    color: #fffafa;
-    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 12px 20px;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px; /* Rounded corners */
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
 }
 
 .submit-btn:hover {
     background-color: #45a049;
+    transform: scale(1.05);
 }
 
 .submit-btn:focus {
     outline: none;
+}
+
+/* Style for the file input button (Custom look) */
+#image {
+    display: none; /* Hide default file input */
+}
+
+#image + label {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 12px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+#image + label:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly grow the label */
 }
