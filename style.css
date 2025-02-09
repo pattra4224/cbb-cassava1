@@ -11,7 +11,9 @@
     display: flex; 
     background-color: #336633;  /* ตั้งค่าสีพื้นหลัง */
     text-align: left ;         /* ตั้งค่าการจัดวางข้อความ */
-    align-items: center;     /* ตั้งค่าการจัดวางข้อความ */ 
+    align-items: center;     /* ตั้งค่าการจัดวางข้อความ */
+    position: fixed; 
+    top: 0;
     padding: 10px;              /* เพิ่มระยะห่างภายใน */
     width: 100%; 
     height: 50px;  

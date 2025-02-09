@@ -24,7 +24,7 @@
 <body>
     <div class="header">
         <h1>My Cassava</h1>
-    </div> 
+    </div>
 
     <div class="background">
 
@@ -33,11 +33,21 @@
         </div>
 
         <div class="center-image">
-            <img src="pic/ปกเว็บ 2.png" alt="cassava" width="95%" height="300">
+            <img src="pic/ปกเว็บ 2.png" alt="cassava" width="95%" height="300" style="border-radius: 15px;">
         </div>
 
         <p>Welcom to My cassava website</p>
-        <script src="script.js"></script>
+
+
+        <div class="input">
+            <form id="upload-form" enctype="multipart/form-data">
+                <label for="image">Choose Image:</label>
+                <input type="file" id="image" name="image" accept="image/*" required><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+
     </div>
 
 </body>
