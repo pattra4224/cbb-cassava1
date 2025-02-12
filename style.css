@@ -13,7 +13,7 @@
 }
 
 
-.header {
+.banner {
     display: flex; 
     background-color: #336633;  /* ตั้งค่าสีพื้นหลัง */
     text-align: left ;         /* ตั้งค่าการจัดวางข้อความ */
@@ -37,7 +37,7 @@
     height: 1px;  
 }
 
-.header h1 {
+.banner h1 {
     font-family: 'Times New Roman', sans-serif; 
     color: #FFF;                    /* สีของข้อความ */
     font-size: 34px;                 /* ขนาดฟอนต์ */
@@ -63,13 +63,14 @@
 
 .form-input {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin-top: 8px;
     border: 2px solid #4CAF50; /* Green border */
-    border-radius: 10px;
+    border-radius: 12px; /* Rounded corners */
     font-size: 14px;
-    background-color: #f9f9f9;
+    background-color: #e8f5e9; /* Light green background */
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 
@@ -114,9 +115,17 @@
     display: inline-block;
     transition: background-color 0.3s ease, transform 0.2s ease;
     text-align: center;
+    width: auto;
 }
 
 #image + label:hover {
     background-color: #45a049; /* Darker green on hover */
     transform: scale(1.05); /* Slightly grow the label */
+} 
+
+.center-content {
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;  
+    text-align: center;                     
 }
