@@ -1,5 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;  
+    min-height: 100vh;
+}
+
+
 .background {
-    background-color: #f5f5f5;  /* ตั้งค่าสีพื้นหลัง */
+    background-color: #f5f5f5;  
     width: 100%; 
     height: 100%; 
     margin: 0; 
@@ -15,12 +23,12 @@
 
 .banner {
     display: flex; 
-    background-color: #336633;  /* ตั้งค่าสีพื้นหลัง */
-    text-align: left ;         /* ตั้งค่าการจัดวางข้อความ */
-    align-items: center;     /* ตั้งค่าการจัดวางข้อความ */
+    background-color: #336633;  
+    text-align: left ;         
+    align-items: center;    
     position: fixed; 
     top: 0;
-    padding: 10px;              /* เพิ่มระยะห่างภายใน */
+    padding: 10px;           
     width: 100%; 
     height: 50px;  
     padding: 10px;   
@@ -29,18 +37,18 @@
 
 .line1 {
     display: flex; 
-    background-color: #f5f5f5;  /* ตั้งค่าสีพื้นหลัง */
-    text-align: left ;         /* ตั้งค่าการจัดวางข้อความ */
-    align-items: center;     /* ตั้งค่าการจัดวางข้อความ */ 
-    padding: 2px;              /* เพิ่มระยะห่างภายใน */
+    background-color: #f5f5f5;  
+    text-align: left ;         
+    align-items: center;     
+    padding: 10px;             
     width: 100%; 
     height: 1px;  
 }
 
 .banner h1 {
     font-family: 'Times New Roman', sans-serif; 
-    color: #FFF;                    /* สีของข้อความ */
-    font-size: 34px;                 /* ขนาดฟอนต์ */
+    color: #FFF;                  
+    font-size: 34px;                
     margin: 0;
     padding: 0;
 }
@@ -65,10 +73,10 @@
     width: 100%;
     padding: 12px;
     margin-top: 8px;
-    border: 2px solid #4CAF50; /* Green border */
-    border-radius: 12px; /* Rounded corners */
+    border: 2px solid #4CAF50; 
+    border-radius: 12px; 
     font-size: 14px;
-    background-color: #e8f5e9; /* Light green background */
+    background-color: #e8f5e9; 
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -128,4 +136,41 @@
     flex-direction: column;   
     justify-content: center;  
     text-align: center;                     
+}
+
+.help-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #2E8B57; /* sea green */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+}
+
+.help-button:hover {
+    background-color: #26734d;
+}
+
+.help-tab {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.help-content {
+    position: relative;
 }
